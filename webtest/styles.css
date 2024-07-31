@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#file-list, #web-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#file-list h2, #web-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#file-list ul, #web-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#file-list li, #web-list li {
+    margin-bottom: 10px;
+}
+
+#file-list a, #web-list a, #openPopup {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#file-list a:hover, #web-list a:hover, #openPopup:hover {
+    background-color: #e0e0e0;
+}
+
+#popup {
+    display: none; /* 初始狀態為隱藏 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
